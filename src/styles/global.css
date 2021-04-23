@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --gap-quarter: 0.25rem;
   --gap-half: 0.5rem;
@@ -20,29 +24,12 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-size: 20px;
-}
-
 body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--fg);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
-  background-image: radial-gradient(#ddd 1px, transparent 1px),
-    radial-gradient(#ddd 1px, transparent 1px);
-  background-position: 0 0, 25px 25px;
-  background-attachment: fixed;
-  background-size: 50px 50px;
 
   /* Hack */
   overflow-x: hidden;
@@ -249,14 +236,6 @@ figure {
 figure {
   font-size: 0.85rem;
   color: #999;
-}
-
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-a:hover {
-  color: #3291ff;
 }
 
 .links {

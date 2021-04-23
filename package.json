@@ -10,6 +10,10 @@
   },
   "pre-commit": "lint-staged",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@zeit/react-jsx-parser": "2.0.0",
     "async-sema": "3.1.0",
     "github-slugger": "1.2.1",
@@ -18,15 +22,19 @@
     "prismjs": "1.17.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-typeform-embed": "^0.2.1",
     "uuid": "8.1.0"
   },
   "devDependencies": {
     "@types/katex": "0.11.0",
     "@types/node": "14.14.31",
     "@types/react": "17.0.2",
+    "autoprefixer": "^10.2.5",
     "lint-staged": "10.5.4",
+    "postcss": "^8.2.10",
     "pre-commit": "1.2.2",
     "prettier": "2.2.1",
+    "tailwindcss": "^2.1.1",
     "typescript": "4.2.2"
   }
 }

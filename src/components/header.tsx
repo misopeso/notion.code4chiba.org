@@ -1,47 +1,51 @@
-import Link from 'next/link'
 import Head from 'next/head'
-import ExtLink from './ext-link'
 import { useRouter } from 'next/router'
-import styles from '../styles/header.module.css'
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faTwitter,
+  IconDefinition,
+} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const navItems: { label: string; page?: string; link?: string }[] = [
-  { label: 'Home', page: '/' },
-  { label: 'Blog', page: '/blog' },
-  { label: 'Contact', page: '/contact' },
-  { label: 'Source Code', link: 'https://github.com/ijjk/notion-blog' },
-]
+import ExtLink from './ext-link'
 
 const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
+
+const socialIcons: { icon: IconDefinition; href: string }[] = [
+  { icon: faFacebook, href: 'https://www.facebook.com/codeforchiba' },
+  { icon: faTwitter, href: 'https://twitter.com/code4chiba' },
+  { icon: faInstagram, href: 'https://www.instagram.com/codeforchiba' },
+  { icon: faGithub, href: 'https://github.com/codeforchiba' },
+]
 
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
 
   return (
-    <header className={styles.header}>
+    <header className="mt-4 mb-6 mx-8 flex justify-between">
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} My Notion Blog</title>
+        <title>{titlePre ? `${titlePre} |` : ''} Code for Chiba</title>
         <meta
           name="description"
-          content="An example Next.js site using Notion for the blog"
+          content="Code for Chiba は、テクノロジーを活用して千葉市をよりよい街にする NPO法人です。"
         />
-        <meta name="og:title" content="My Notion Blog" />
+        <meta property="og:title" content="Code for Chiba" />
         <meta property="og:image" content={ogImageUrl} />
-        <meta name="twitter:site" content="@_ijjk" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={ogImageUrl} />
+        <meta property="twitter:site" content="@code4chiba" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content={ogImageUrl} />
       </Head>
+      <div>
+        <img src="/logo.png" height="56" width="240" alt="Code for Chiba" />
+      </div>
       <ul>
-        {navItems.map(({ label, page, link }) => (
-          <li key={label}>
-            {page ? (
-              <Link href={page}>
-                <a className={pathname === page ? 'active' : undefined}>
-                  {label}
-                </a>
-              </Link>
-            ) : (
-              <ExtLink href={link}>{label}</ExtLink>
-            )}
+        {socialIcons.map(({ icon, href }) => (
+          <li key={href} className="inline-block mr-4">
+            <ExtLink href={href}>
+              <FontAwesomeIcon icon={icon} className="text-2xl text-pink-500" />
+            </ExtLink>
           </li>
         ))}
       </ul>

@@ -1,25 +1,28 @@
-import ExtLink from './ext-link'
+import { useRef } from 'react'
+import { ReactTypeformEmbed } from 'react-typeform-embed'
 
 export default function Footer() {
+  const formRef = useRef<ReactTypeformEmbed>(null)
+  const openForm = () => {
+    formRef.current.typeform.open()
+  }
+
   return (
     <>
       <footer>
-        <span>Deploy your own!</span>
-        <ExtLink href="https://vercel.com/new/git/external?repository-url=https://github.com/ijjk/notion-blog/tree/main&project-name=notion-blog&repository-name=notion-blog">
-          <img
-            src="https://vercel.com/button"
-            height={46}
-            width={132}
-            alt="deploy to Vercel button"
-          />
-        </ExtLink>
-        <span>
-          or{' '}
-          <ExtLink href="https://github.com/ijjk/notion-blog">
-            view source
-          </ExtLink>
-        </span>
+        <img src="/icon.png" width="100" />
+        <ul>
+          <li>
+            <span onClick={openForm}>問い合わせ</span>
+          </li>
+        </ul>
+        <address>Copyright &copy; 2021 Code for Chiba</address>
       </footer>
+      <ReactTypeformEmbed
+        url="https://codeforchiba.typeform.com/to/qzQYxn"
+        popup={true}
+        ref={formRef}
+      />
     </>
   )
 }
