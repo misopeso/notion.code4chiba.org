@@ -18,7 +18,7 @@ export default function TopProduct() {
       <h2 className="font-bold mt-2 ml-4">
         <ExtLink href="https://stopcovid19.code4chiba.org/">
           新型コロナウィルス感染症対策サイト
-          <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-1 text-sm" />
+          <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-1 text-xs" />
         </ExtLink>
       </h2>
       <p className="leading-6 my-2 mx-4">

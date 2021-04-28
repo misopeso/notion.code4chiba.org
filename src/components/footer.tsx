@@ -11,7 +11,7 @@ export default function Footer() {
     <>
       <footer className="mt-8 mb-4 flex flex-col">
         <div className="mt-4 flex justify-center">
-          <img src="/icon.png" width="100" />
+          <img src="/icon.png" width="80" />
         </div>
         <ul className="my-4 flex justify-center">
           <li>
@@ -28,6 +28,7 @@ export default function Footer() {
         url="https://codeforchiba.typeform.com/to/qzQYxn"
         popup={true}
         ref={formRef}
+        style={{ display: 'none' }}
       />
     </>
   )

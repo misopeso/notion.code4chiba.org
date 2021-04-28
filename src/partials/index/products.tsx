@@ -37,7 +37,7 @@ export default function Products() {
                 {title}
                 <FontAwesomeIcon
                   icon={faExternalLinkAlt}
-                  className="ml-1 text-sm"
+                  className="ml-1 text-xs"
                 />
               </ExtLink>
             </h2>
