@@ -9,14 +9,20 @@ export default function Footer() {
 
   return (
     <>
-      <footer>
-        <img src="/icon.png" width="100" />
-        <ul>
+      <footer className="mt-8 mb-4 flex flex-col">
+        <div className="mt-4 flex justify-center">
+          <img src="/icon.png" width="100" />
+        </div>
+        <ul className="my-4 flex justify-center">
           <li>
-            <span onClick={openForm}>問い合わせ</span>
+            <span onClick={openForm} className="cursor-pointer">
+              問い合わせ
+            </span>
           </li>
         </ul>
-        <address>Copyright &copy; 2021 Code for Chiba</address>
+        <address className="text-center not-italic text-sm">
+          Copyright &copy; 2021 NPO法人 Code for Chiba
+        </address>
       </footer>
       <ReactTypeformEmbed
         url="https://codeforchiba.typeform.com/to/qzQYxn"
