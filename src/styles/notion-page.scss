@@ -18,8 +18,11 @@
       @apply mx-2 my-2 list-disc list-inside;
     }
 
-    a {
-      @apply underline;
+    p,
+    ul {
+      a {
+        @apply underline;
+      }
     }
   }
 }

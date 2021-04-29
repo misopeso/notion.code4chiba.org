@@ -1,7 +1,8 @@
 import { useRef } from 'react'
 import { ReactTypeformEmbed } from 'react-typeform-embed'
+import Link from 'next/link'
 
-export default function Footer() {
+const Footer = () => {
   const formRef = useRef<ReactTypeformEmbed>(null)
   const openForm = () => {
     formRef.current.typeform.open()
@@ -13,7 +14,13 @@ export default function Footer() {
         <div className="mt-4 flex justify-center">
           <img src="/icon.png" width="80" />
         </div>
-        <ul className="my-4 flex justify-center">
+        <ul className="my-4 flex justify-center space-x-4">
+          <li>
+            <Link href="/p/about">Code for Chiba について</Link>
+          </li>
+          <li>
+            <Link href="/p/membership">会員制度</Link>
+          </li>
           <li>
             <span onClick={openForm} className="cursor-pointer">
               問い合わせ
@@ -33,3 +40,5 @@ export default function Footer() {
     </>
   )
 }
+
+export default Footer

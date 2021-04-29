@@ -1,4 +1,6 @@
 import ExtLink from '../../components/ext-link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBullhorn } from '@fortawesome/free-solid-svg-icons'
 
 const banners: { title: string; image: string; href: string }[] = [
   {
@@ -10,7 +12,11 @@ const banners: { title: string; image: string; href: string }[] = [
 
 export default function Banners() {
   return (
-    <div className="px-8 py-4 w-1/3 border-gray-300 border-l border-solid">
+    <div className="mt-4">
+      <p className="tracking-widest mb-2">
+        <FontAwesomeIcon icon={faBullhorn} className="mr-2 text-md" />
+        CHEER FOR
+      </p>
       <ul>
         {banners.map(({ title, image, href }) => (
           <li key={title}>
