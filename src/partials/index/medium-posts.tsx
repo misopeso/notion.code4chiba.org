@@ -32,6 +32,14 @@ const MediumPosts = ({ posts }) => {
           )
         })}
       </ul>
+      <p className="tracking-widest text-gray-500">
+        <ExtLink
+          href="https://medium.com/the-code-for-chiba-network"
+          className="inline-block ml-2"
+        >
+          もっと読む...
+        </ExtLink>
+      </p>
     </div>
   )
 }
