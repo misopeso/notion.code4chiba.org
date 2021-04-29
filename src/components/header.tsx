@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import {
   faFacebook,
   faGithub,
@@ -38,7 +39,9 @@ const Header = ({ titlePre = '' }) => {
         <meta property="twitter:image" content={ogImageUrl} />
       </Head>
       <div>
-        <img src="/logo.png" height="56" width="240" alt="Code for Chiba" />
+        <Link href="/">
+          <img src="/logo.png" height="56" width="240" alt="Code for Chiba" />
+        </Link>
       </div>
       <ul>
         {socialIcons.map(({ icon, href }) => (

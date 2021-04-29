@@ -16,7 +16,7 @@ export default function JoinUs() {
       </p>
       <div className="text-right text-gray-500 tracking-widest">
         <FontAwesomeIcon icon={faAngleDoubleLeft} className="mr-2" />
-        <Link href="/about">ABOUT</Link>
+        <Link href="/p/about">ABOUT</Link>
       </div>
       <p className="my-2">
         そして、Code for Chiba の活動に興味を持ったら参加してみましょう！
@@ -39,7 +39,15 @@ export default function JoinUs() {
       </p>
       <div className="text-right text-gray-500 tracking-widest">
         <FontAwesomeIcon icon={faAngleDoubleLeft} className="mr-2" />
-        <Link href="/events">EVENTS</Link>
+        <Link href="/p/events">EVENTS</Link>
+      </div>
+      <p className="my-2">
+        もっと一緒に活動したい！ 支援したい！ 方は、会員制度がございます。
+        正会員の方には活動を支援する仕組みを提供しています。
+      </p>
+      <div className="text-right text-gray-500 tracking-widest">
+        <FontAwesomeIcon icon={faAngleDoubleLeft} className="mr-2" />
+        <Link href="/p/membership">MEMBERSHIP</Link>
       </div>
     </div>
   )

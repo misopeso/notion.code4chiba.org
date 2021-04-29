@@ -1,4 +1,6 @@
 import '../styles/global.css'
+import '../styles/notion-page.scss'
+
 import 'katex/dist/katex.css'
 import Footer from '../components/footer'
 

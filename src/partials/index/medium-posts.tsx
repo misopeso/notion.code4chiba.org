@@ -13,11 +13,11 @@ const MediumPosts = ({ posts }) => {
         STORIES
       </p>
       <ul>
-        {posts.map(({ title, link, pubDate }) => {
+        {posts.map(({ title, link, pubDate, guid }) => {
           const d = DateTime.fromRFC2822(pubDate)
 
           return (
-            <li className="mb-4">
+            <li className="mb-4" key={guid}>
               <div className="text-gray-400">
                 <span className="text-lg font-bold">{d.toFormat('y/L/d')}</span>
               </div>

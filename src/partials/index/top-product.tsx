@@ -6,7 +6,7 @@ import ExtLink from '../../components/ext-link'
 export default function TopProduct() {
   return (
     <div className="px-8 pb-8 w-1/2">
-      <p className="tracking-widest">
+      <p className="tracking-widest mb-2">
         <FontAwesomeIcon icon={faGlasses} className="mr-2 text-md" />
         FEATURED
       </p>
