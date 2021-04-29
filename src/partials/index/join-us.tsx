@@ -39,7 +39,10 @@ export default function JoinUs() {
       </p>
       <div className="text-right text-gray-500 tracking-widest">
         <FontAwesomeIcon icon={faAngleDoubleLeft} className="mr-2" />
-        <Link href="/p/events">EVENTS</Link>
+        <ExtLink href="https://www.facebook.com/codeforchiba/events/">
+          イベントをみる
+          <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-1 text-sm" />
+        </ExtLink>
       </div>
       <p className="my-2">
         もっと一緒に活動したい！ 支援したい！ 方は、会員制度がございます。
