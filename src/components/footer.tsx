@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="mt-4 flex justify-center">
           <img src="/icon.png" width="80" />
         </div>
-        <ul className="my-4 flex justify-center space-x-4">
+        <ul className="mx-4 my-4 flex flex-wrap md:justify-center space-x-4">
           <li>
             <Link href="/p/about">Code for Chiba について</Link>
           </li>

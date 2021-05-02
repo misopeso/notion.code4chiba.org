@@ -24,8 +24,7 @@ const Index = ({ feeds }) => {
       </div>
       <div className="md:mx-8 pt-4 md:pt-8 flex flex-wrap border-gray-300 border-t border-solid">
         <JoinUs />
-        <div className="px-4 md:px-8 py-4 w-full md:w-1/3 border-gray-300 border-t md:border-l md:border-t-0 border-solid">
-          <Wanted />
+        <div className="px-4 md:px-8 py-4 md:py-0 w-full md:w-1/3 border-gray-300 border-t md:border-l md:border-t-0 border-solid">
           <Banners />
         </div>
       </div>

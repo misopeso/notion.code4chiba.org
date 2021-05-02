@@ -12,14 +12,14 @@ const banners: { title: string; image: string; href: string }[] = [
 
 export default function Banners() {
   return (
-    <div className="mt-4">
+    <div>
       <p className="tracking-widest mb-2">
         <FontAwesomeIcon icon={faBullhorn} className="mr-2 text-md" />
         CHEER FOR
       </p>
-      <ul>
+      <ul className="my-4">
         {banners.map(({ title, image, href }) => (
-          <li key={title}>
+          <li key={title} className="flex justify-center md:justify-start">
             <ExtLink href={href}>
               <img src={image} alt={title} />
             </ExtLink>
