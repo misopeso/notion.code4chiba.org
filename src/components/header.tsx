@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import ExtLink from './ext-link'
 
-const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
+const ogImageUrl = 'https://code4chiba.org/ogp.jpg'
 
 const socialIcons: { icon: IconDefinition; href: string }[] = [
   { icon: faFacebook, href: 'https://www.facebook.com/codeforchiba' },
@@ -25,7 +25,7 @@ const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
 
   return (
-    <header className="mt-4 mb-6 mx-8 flex justify-between">
+    <header className="mt-4 mb-6 mx-4 md:mx-8 md:flex md:justify-between">
       <Head>
         <title>{titlePre ? `${titlePre} |` : ''} Code for Chiba</title>
         <meta
@@ -40,10 +40,16 @@ const Header = ({ titlePre = '' }) => {
       </Head>
       <div>
         <Link href="/">
-          <img src="/logo.png" height="56" width="240" alt="Code for Chiba" />
+          <img
+            src="/logo.png"
+            height="56"
+            width="240"
+            alt="Code for Chiba"
+            className="cursor-pointer"
+          />
         </Link>
       </div>
-      <ul>
+      <ul className="flex justify-end">
         {socialIcons.map(({ icon, href }) => (
           <li key={href} className="inline-block mr-4">
             <ExtLink href={href}>

@@ -25,7 +25,7 @@ const products: {
 
 export default function Products() {
   return (
-    <div className="px-8 pt-4 pb-8 w-1/2">
+    <div className="px-4 md:px-8 pt-4 pb-4 md:pb-8 w-full md:w-1/2 border-gray-300 border-t border-solid md:border-none">
       {products.map(({ title, description, image, href }) => (
         <div key={title} className="flex py-4">
           <div>

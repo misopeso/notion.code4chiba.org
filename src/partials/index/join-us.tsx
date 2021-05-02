@@ -9,7 +9,7 @@ import ExtLink from '../../components/ext-link'
 
 export default function JoinUs() {
   return (
-    <div className="pb-8 px-8 w-2/3">
+    <div className="pb-4 md:pb-8 px-4 md:px-8 md:w-2/3">
       <h1 className="text-3xl my-2">参加しよう！</h1>
       <p className="my-2">
         Code for Chiba について、まずはこちらをご覧ください！

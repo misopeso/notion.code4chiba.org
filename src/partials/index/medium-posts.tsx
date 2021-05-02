@@ -7,7 +7,7 @@ import ExtLink from '../../components/ext-link'
 
 const MediumPosts = ({ posts }) => {
   return (
-    <div className="px-8 w-1/3 border-gray-300 border-l border-solid">
+    <div className="py-4 md:py-0 px-4 md:px-8 w-full md:w-1/3 border-gray-300 border-t md:border-l md:border-t-0 border-solid">
       <p className="tracking-widest mb-2">
         <FontAwesomeIcon icon={faBook} className="mr-2 text-md" />
         STORIES

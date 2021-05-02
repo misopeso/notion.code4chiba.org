@@ -14,17 +14,17 @@ const Index = ({ feeds }) => {
   return (
     <>
       <Header />
-      <div className="mx-8 flex">
-        <div className="w-2/3 flex flex-wrap">
+      <div className="flex flex-wrap md:mx-8 pb-4 md:pb-8">
+        <div className="w-full md:w-2/3 flex flex-wrap">
           <TopProduct />
           <Products />
           <DoAction />
         </div>
         <MediumPosts posts={feeds} />
       </div>
-      <div className="mx-8 mt-8 pt-8 flex border-gray-300 border-t border-solid">
+      <div className="md:mx-8 pt-4 md:pt-8 flex flex-wrap border-gray-300 border-t border-solid">
         <JoinUs />
-        <div className="px-8 py-4 w-1/3 border-gray-300 border-l border-solid">
+        <div className="px-4 md:px-8 py-4 w-full md:w-1/3 border-gray-300 border-t md:border-l md:border-t-0 border-solid">
           <Wanted />
           <Banners />
         </div>
