@@ -1,6 +1,6 @@
 .post {
   .post-body {
-    @apply mx-16;
+    @apply mx-4 md:mx-12;
 
     h2 {
       @apply text-2xl font-bold my-4;
@@ -15,7 +15,7 @@
     }
 
     ul {
-      @apply mx-2 my-2 list-disc list-inside;
+      @apply ml-8 mr-2 my-2 list-disc list-outside;
     }
 
     p,

@@ -151,8 +151,8 @@ const RenderPost = ({ post, redirect, preview }) => {
           </div>
         </div>
       )}
-      <div className="post w-9/12 mx-auto">
-        <h1 className="text-3xl">{post.Page || ''}</h1>
+      <div className="post w-full md:w-9/12 mx-auto">
+        <h1 className="text-3xl ml-4">{post.Page || ''}</h1>
         {post.Authors.length > 0 && (
           <div className="authors">By: {post.Authors.join(' ')}</div>
         )}
