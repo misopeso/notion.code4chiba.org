@@ -16,10 +16,10 @@ const Footer = () => {
         </div>
         <ul className="mx-4 my-4 flex flex-wrap md:justify-center space-x-4">
           <li>
-            <Link href="/p/about">Code for Chiba について</Link>
+            <Link href="/about">Code for Chiba について</Link>
           </li>
           <li>
-            <Link href="/p/membership">会員制度</Link>
+            <Link href="/membership">会員制度</Link>
           </li>
           <li>
             <span onClick={openForm} className="cursor-pointer">

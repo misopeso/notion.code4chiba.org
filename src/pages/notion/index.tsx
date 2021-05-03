@@ -75,7 +75,7 @@ const Index = ({ posts = [], preview }) => {
                   {!post.Published && (
                     <span className={blogStyles.draftBadge}>Draft</span>
                   )}
-                  <Link href="/p/[slug]" as={getBlogLink(post.Slug)}>
+                  <Link href="/[slug]" as={getBlogLink(post.Slug)}>
                     <a>{post.Page}</a>
                   </Link>
                 </span>

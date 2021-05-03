@@ -16,7 +16,7 @@ export default function JoinUs() {
       </p>
       <div className="text-right text-gray-500 tracking-widest">
         <FontAwesomeIcon icon={faAngleDoubleLeft} className="mr-2" />
-        <Link href="/p/about">ABOUT</Link>
+        <Link href="/about">ABOUT</Link>
       </div>
       <p className="my-2">
         そして、Code for Chiba の活動に興味を持ったら参加してみましょう！
@@ -50,7 +50,7 @@ export default function JoinUs() {
       </p>
       <div className="text-right text-gray-500 tracking-widest">
         <FontAwesomeIcon icon={faAngleDoubleLeft} className="mr-2" />
-        <Link href="/p/membership">MEMBERSHIP</Link>
+        <Link href="/membership">MEMBERSHIP</Link>
       </div>
     </div>
   )
