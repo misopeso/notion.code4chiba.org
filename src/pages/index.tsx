@@ -9,6 +9,7 @@ import MediumPosts from '../partials/index/medium-posts'
 import JoinUs from '../partials/index/join-us'
 import Banners from '../partials/index/banners'
 import Wanted from '../partials/index/wanted'
+import Media from '../partials/index/media'
 
 const Index = ({ feeds }) => {
   return (
@@ -26,6 +27,7 @@ const Index = ({ feeds }) => {
         <JoinUs />
         <div className="px-4 md:px-8 py-4 md:py-0 w-full md:w-1/3 border-gray-300 border-t md:border-l md:border-t-0 border-solid">
           <Banners />
+          <Media />
         </div>
       </div>
     </>
