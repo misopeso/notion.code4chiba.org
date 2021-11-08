@@ -10,19 +10,15 @@ export default function TopProduct() {
         <FontAwesomeIcon icon={faGlasses} className="mr-2 text-md" />
         FEATURED
       </p>
-      <img
-        src="/covid-19.png"
-        alt="千葉市非公式 新型コロナウィルス感染症対策サイト"
-        className="max-w-full"
-      />
+      <img src="/papamama.jpg" alt="ちばこどもマップ" className="max-w-full" />
       <h2 className="font-bold mt-2 ml-4">
-        <ExtLink href="https://stopcovid19.code4chiba.org/">
-          新型コロナウィルス感染症対策サイト
+        <ExtLink href="https://papamama.code4chiba.org/">
+          ちばこどもマップ
           <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-1 text-xs" />
         </ExtLink>
       </h2>
       <p className="leading-6 my-2 mx-4">
-        千葉市が公開しているオープンデータを元に、現在の状況をわかりやすくお伝えします。
+        保育施設や学童施設をマップから簡単に。定期的にデータ更新中！
       </p>
     </div>
   )

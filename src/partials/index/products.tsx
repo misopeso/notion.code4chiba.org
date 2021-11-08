@@ -10,10 +10,10 @@ const products: {
   href: string
 }[] = [
   {
-    title: 'ちばこどもマップ',
-    description: 'マップから簡単に。',
-    image: '/papamama.jpg',
-    href: 'https://papamama.code4chiba.org/',
+    title: '新型コロナ対策サイト',
+    description: '現在の状況をわかりやすく。',
+    image: '/covid-19.png',
+    href: 'https://stopcovid19.code4chiba.org/',
   },
   {
     title: 'IODD 2018',
